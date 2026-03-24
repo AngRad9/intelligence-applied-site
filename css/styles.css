@@ -385,7 +385,7 @@ nav {
   width: 100%;
   margin: 0;
   display: grid;
-  grid-template-columns: 45% 55%;
+  grid-template-columns: 42% 58%;
   gap: 0;
   align-items: end;
   min-height: 100vh;
@@ -393,7 +393,7 @@ nav {
 
 .hero-text {
   color: var(--color-white);
-  padding: 0 0 12vh 5vw;
+  padding: 0 2rem 12vh 4vw;
   text-align: left;
 }
 
