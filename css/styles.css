@@ -382,11 +382,10 @@ nav {
 .hero-content {
   position: relative;
   z-index: 2;
-  max-width: 1400px;
   width: 100%;
-  margin: 0 auto;
+  margin: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 45% 55%;
   gap: 0;
   align-items: end;
   min-height: 100vh;
@@ -394,7 +393,7 @@ nav {
 
 .hero-text {
   color: var(--color-white);
-  padding: 0 0 15vh 6vw;
+  padding: 0 0 12vh 5vw;
   text-align: left;
 }
 
@@ -419,28 +418,29 @@ nav {
 .hero-ctas-row {
   display: flex;
   align-items: center;
-  gap: var(--spacing-md);
-  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  flex-wrap: nowrap;
 }
 
 .btn-hero-outline {
   display: inline-block;
   padding: 14px 28px;
-  border: 1.5px solid rgba(255, 255, 255, 0.7);
-  border-radius: 30px;
+  border: 1.5px solid rgba(255, 255, 255, 0.7) !important;
+  border-radius: 30px !important;
   color: var(--color-white);
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   text-decoration: none;
   transition: all var(--transition-base);
-  background: transparent;
+  background: transparent !important;
+  white-space: nowrap;
 }
 
 .btn-hero-outline:hover {
-  background-color: rgba(255, 255, 255, 0.15);
-  border-color: var(--color-white);
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  border-color: var(--color-white) !important;
   color: var(--color-white);
   text-decoration: none;
   transform: translateY(-2px);
