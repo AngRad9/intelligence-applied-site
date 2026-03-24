@@ -2,14 +2,6 @@
 
 [build]
   publish = "."
-  command = ""
-
-# Redirects for clean URLs and fallback
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-  condition = { Status = 404, !Important = true }
 
 # Security headers
 [[headers]]
