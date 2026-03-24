@@ -1,0 +1,40 @@
+# Netlify configuration for Intelligence Applied AI static site
+
+[build]
+  publish = "."
+  command = ""
+
+# Redirects for clean URLs and fallback
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  condition = { Status = 404, !Important = true }
+
+# Security headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "no-referrer-when-downgrade"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+
+# Cache configuration for assets
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Cache configuration for stylesheets and scripts
+[[headers]]
+  for = "/(css|js)/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# No cache for HTML pages
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
