@@ -1869,42 +1869,7 @@ textarea {
   transform: rotate(-45deg) translate(8px, -8px);
 }
 
-/* ============================================
-   HERO SECTION (PAGE-SPECIFIC)
-   ============================================ */
-
-.hero {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: var(--color-white);
-  position: relative;
-}
-
-.hero-content {
-  z-index: 10;
-  max-width: 800px;
-  padding: var(--spacing-2xl);
-}
-
-.hero h1 {
-  font-family: var(--font-heading);
-  font-size: 3.5rem;
-  font-weight: 700;
-  margin-bottom: var(--spacing-lg);
-  line-height: 1.2;
-}
-
-.hero-subheading {
-  font-size: 1.25rem;
-  font-weight: 300;
-  opacity: 0.95;
-}
+/* Duplicate hero rules removed — see Hero Section above */
 
 /* ============================================
    BIOGRAPHY SECTION
