@@ -210,7 +210,7 @@ nav {
   right: 0;
   background-color: transparent;
   color: var(--color-white);
-  padding: var(--spacing-md) var(--spacing-lg);
+  padding: 16px 40px;
   z-index: 1000;
 }
 
@@ -224,7 +224,7 @@ nav {
 
 .nav-logo {
   font-family: var(--font-heading);
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   font-weight: 400;
   color: var(--color-white);
   text-decoration: none;
@@ -265,6 +265,7 @@ nav {
 }
 
 .nav-cta {
+  display: none;
   background-color: transparent;
   color: var(--color-white);
   padding: 8px 20px;
@@ -375,7 +376,7 @@ nav {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(28, 30, 35, 0.3) 0%, rgba(28, 30, 35, 0.15) 50%, rgba(28, 30, 35, 0.25) 100%);
+  background: linear-gradient(135deg, rgba(28, 30, 35, 0.15) 0%, rgba(28, 30, 35, 0.1) 50%, rgba(28, 30, 35, 0.2) 100%);
   z-index: 1;
 }
 
@@ -393,13 +394,13 @@ nav {
 
 .hero-text {
   color: var(--color-white);
-  padding: 0 2rem 12vh 4vw;
+  padding: 0 0 8vh 40px;
   text-align: left;
 }
 
 .hero h1 {
   color: var(--color-white);
-  font-size: 6.5rem;
+  font-size: 8rem;
   margin-bottom: var(--spacing-lg);
   line-height: 1.05;
   font-weight: 400;
@@ -544,6 +545,96 @@ nav {
 }
 
 /* ============================================
+   Page Hero Section (Inner Pages)
+   ============================================ */
+
+.page-hero {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  height: 50vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+.page-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(28, 30, 35, 0.15) 0%, rgba(28, 30, 35, 0.1) 50%, rgba(28, 30, 35, 0.2) 100%);
+  z-index: 1;
+}
+
+.page-hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: 0 0 40px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.page-hero h1 {
+  color: var(--color-white);
+  font-size: 5rem;
+  margin-bottom: var(--spacing-md);
+  line-height: 1.05;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+.page-hero .btn-outline-pill {
+  display: inline-block;
+  margin-top: var(--spacing-md);
+  padding: 12px 28px;
+  border: 1.5px solid rgba(255, 255, 255, 0.7);
+  border-radius: 30px;
+  color: var(--color-white);
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  background: transparent;
+  transition: all var(--transition-base);
+  width: fit-content;
+}
+
+.page-hero .btn-outline-pill:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: var(--color-white);
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1024px) {
+  .page-hero h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-hero {
+    height: 40vh;
+  }
+
+  .page-hero-content {
+    padding: 0 0 30px 30px;
+  }
+
+  .page-hero h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* ============================================
    Positioning Section (Quote)
    ============================================ */
 
@@ -581,7 +672,7 @@ nav {
    ============================================ */
 
 section {
-  padding: var(--spacing-3xl) var(--spacing-lg);
+  padding: 4rem 40px;
 }
 
 .section-dark {
@@ -628,7 +719,7 @@ section {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
