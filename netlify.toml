@@ -1,0 +1,67 @@
+# Netlify configuration for Intelligence Applied static site
+
+[build]
+  publish = "."
+
+# -----------------------------------------------------------------------------
+# Redirects — Privacy & Terms canonicalized on the learning subdomain
+# Anyone hitting old paths gets sent to the canonical version.
+# -----------------------------------------------------------------------------
+[[redirects]]
+  from = "/pages/privacy.html"
+  to   = "https://learning.intelligenceapplied.ai/privacy"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/pages/terms.html"
+  to   = "https://learning.intelligenceapplied.ai/terms"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/privacy"
+  to   = "https://learning.intelligenceapplied.ai/privacy"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/terms"
+  to   = "https://learning.intelligenceapplied.ai/terms"
+  status = 301
+  force  = true
+
+# Block archive folder from being browsable via direct URL
+[[redirects]]
+  from = "/pages/_archive/*"
+  to   = "/"
+  status = 404
+  force  = true
+
+# Security headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "no-referrer-when-downgrade"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+
+# Cache configuration for assets
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Cache configuration for stylesheets and scripts
+[[headers]]
+  for = "/(css|js)/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# No cache for HTML pages
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
