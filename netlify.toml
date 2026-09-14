@@ -65,3 +65,12 @@
   for = "/*.html"
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
+
+# Calendar files: must be served as text/calendar or the browser renders
+# the raw text instead of handing the file to the calendar app.
+[[headers]]
+  for = "/calendar/*"
+  [headers.values]
+    Content-Type = "text/calendar; charset=utf-8"
+    Content-Disposition = "attachment"
+    Cache-Control = "public, max-age=3600"

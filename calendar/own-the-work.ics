@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//How Mighty We Ventures//AngVic Bootcamps//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:own-the-work-20260913@intelligenceapplied.ai
+DTSTAMP:20260914T013950Z
+DTSTART:20261002T130000Z
+DTEND:20261002T160000Z
+SUMMARY:Own the Work
+DESCRIPTION:A three hour working bootcamp with Angela Radcliffe and Victori
+ a Gamerman\, PhD.\n\nBring a real task from your own work. Laptop\, and ac
+ cess to the AI tool your company has approved.\n\nRecorded\; the replay is
+  provided to VIP registrants.\n\nJoin: https://us06web.zoom.us/j/836259961
+ 72?pwd=6icRqFPBWWknZYXu0ieWUHnknE5K9C.1\nMeeting ID: 836 2599 6172\nPassco
+ de: 781466
+LOCATION:https://us06web.zoom.us/j/83625996172?pwd=6icRqFPBWWknZYXu0ieWUHnk
+ nE5K9C.1
+URL:https://us06web.zoom.us/j/83625996172?pwd=6icRqFPBWWknZYXu0ieWUHnknE5K9
+ C.1
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
