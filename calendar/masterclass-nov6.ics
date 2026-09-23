@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//How Mighty We Ventures//AngVic Bootcamps//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:masterclass-nov6-20260923@intelligenceapplied.ai
+DTSTAMP:20260923T155351Z
+DTSTART:20261106T140000Z
+DTEND:20261106T150000Z
+SUMMARY:Learn It Once. Run It in Any AI Tool.
+DESCRIPTION:A free hour with Angela Radcliffe and Victoria Gamerman\, PhD.\
+ n\nBring one real task from your own work.\n\nThis session is recorded and
+  the replay goes to everyone who registered.\n\nJoin: https://us06web.zoom
+ .us/j/87279040307?pwd=RwW6mkbSbYMmkQKcFIb8Sx2u0dGkHv.1\nMeeting ID: 872 79
+ 04 0307\nPasscode: 779347
+LOCATION:https://us06web.zoom.us/j/87279040307?pwd=RwW6mkbSbYMmkQKcFIb8Sx2u
+ 0dGkHv.1
+URL:https://us06web.zoom.us/j/87279040307?pwd=RwW6mkbSbYMmkQKcFIb8Sx2u0dGkH
+ v.1
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
